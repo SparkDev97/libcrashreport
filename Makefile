@@ -1,8 +1,11 @@
+export THEOS_DEVICE_IP = localhost
+export THEOS_DEVICE_PORT = 2222
+
 build:
-	make -f Makefile.x86_64
+	#make -f Makefile.x86_64
 	make -f Makefile.arm
-	lipo -create obj/libcrashreport.dylib obj/macosx/libcrashreport.dylib -output libcrashreport.dylib
-	mv libcrashreport.dylib obj/libcrashreport.dylib
+	#lipo -create obj/libcrashreport.dylib obj/macosx/libcrashreport.dylib -output libcrashreport.dylib
+	#mv libcrashreport.dylib obj/libcrashreport.dylib
 
 clean:
 	make -f Makefile.x86_64 clean
