@@ -1,11 +1,14 @@
-Package: jp.ashikase.libcrashreport
-Name: libcrashreport
-Version: 1.1.1~SparkDev
+Package: com.spark.libcrashreport
+Name: libcrashreport (SparkDev)
+Version: 1.1.2
 Description: Library to parse and symbolicate crash reports.
     This library is based upon CrashReporter by kennytm.
 Architecture: iphoneos-arm
 Pre-Depends: firmware (>= 3.0)
-Depends: jp.ashikase.libsymbolicate (>= 1.9.0), jp.ashikase.libpackageinfo
+Depends: com.spark.libsymbolicate (>= 1.9.1), com.spark.libpackageinfo
+Provides: jp.ashikase.libcrashreport
+Replaces: jp.ashikase.libcrashreport
+Conflicts: jp.ashikase.libcrashreport
 Depiction: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=libcrashreportData
 Homepage: http://github.com/ashikase/libcrashreport
 Maintainer: BigBoss <bigboss@thebigboss.org>
